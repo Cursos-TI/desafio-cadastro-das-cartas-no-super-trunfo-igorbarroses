@@ -8,7 +8,7 @@ int main () {
     float area, pib;
     char cidade [80];
 
-     printf ("Desáfio Super Trunfo.\n")
+     printf ("Desáfio Super Trunfo.\n");
 
         printf ("Insira a Cidade:\n");
         scanf ("%s", &cidade)
@@ -16,7 +16,7 @@ int main () {
         printf ("Insira a população da cidade:\n");
         scanf ("%d", &populacao);
 
-        printf ("Insira a Área da cidade:\n")
+        printf ("Insira a Área da cidade:\n");
         scanf ("%f", &area);
 
         printf ("Insira o PIB da cidade:\n");
