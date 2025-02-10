@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h> 
+
+int main() {
+    int populacao;
+    int pontos;
+    float area, pib;
+    char cidade[80];
+
+    printf("Desáfio Super Trunfo.\n");
+
+    printf("Insira a Cidade:\n");
+    fgets(cidade, sizeof(cidade), stdin);
+    cidade[strcspn(cidade, "\n")] = 0; 
+
+    printf("Insira a população da cidade:\n");
+    scanf("%d", &populacao);
+
+    printf("Insira a Área da cidade:\n");
+    scanf("%f", &area);
+
+    printf("Insira o PIB da cidade:\n");
+    scanf("%f", &pib);
+
+    printf("Insira o número de pontos turísticos:\n");
+    scanf("%d", &pontos);
+
+    printf("\nInformações da Cidade:\n");
+    printf("Cidade: %s \n", cidade);
+    printf("População: %d \n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões\n", pib);
+    printf("Pontos turísticos: %d \n", pontos);
+
+    return 0;
+}
