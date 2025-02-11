@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h> 
 
+void limparBuffer() {
+    int caractere;
+    while ((caractere = getchar()) != '\n' && caractere != EOF);
+}
+
 int main() {
     int populacao;
     int pontos;
@@ -15,15 +20,19 @@ int main() {
 
     printf("Insira a população da cidade:\n");
     scanf("%d", &populacao);
+    limparBuffer ();
 
     printf("Insira a Área da cidade:\n");
     scanf("%f", &area);
+    limparBuffer ();
 
     printf("Insira o PIB da cidade:\n");
     scanf("%f", &pib);
+    limparBuffer ();
 
     printf("Insira o número de pontos turísticos:\n");
     scanf("%d", &pontos);
+    limparBuffer ();
 
     printf("\nInformações da Cidade:\n");
     printf("Cidade: %s \n", cidade);
